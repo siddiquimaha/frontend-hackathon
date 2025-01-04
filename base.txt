@@ -1,0 +1,57 @@
+for storage on firebase
+paste this in real timedatabase
+{
+  "rules": {
+    ".read": "true",  // Allow anyone to read
+    ".write": "true", // Allow anyone to write
+    "contacts": {
+      "$contactId": {
+        ".read": "true",
+        ".write": "true"
+      }
+    }
+  }
+}
+its configuration
+//config script
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkxxT8UxV_B72l2rYs3bIY9LdZLq4x81Q",
+    authDomain: "testproject-7d09c.firebaseapp.com",
+    projectId: "testproject-7d09c",
+    storageBucket: "testproject-7d09c.firebasestorage.app",
+    messagingSenderId: "740605982101",
+    appId: "1:740605982101:web:9ef33965cc43aa6069f29c"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+secons config
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB-QkJ4x4HrJlmV2xoQZ-3YPI7f0kW8-eM",
+    authDomain: "firsthackathon-6fb25.firebaseapp.com",
+    projectId: "firsthackathon-6fb25",
+    storageBucket: "firsthackathon-6fb25.firebasestorage.app",
+    messagingSenderId: "761124516534",
+    appId: "1:761124516534:web:e6d7db90c0cd770b662c17"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
